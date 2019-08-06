@@ -20,6 +20,7 @@ gem "kaminari"
 gem "owlcarousel-rails", "~> 2.2", ">= 2.2.3.5"
 gem "puma", "~> 3.11"
 gem "rails", "~> 5.2.3"
+gem "rails_admin"
 gem "rolify"
 gem "rubocop", "~> 0.55.0", require: false
 gem "sass-rails", "~> 5.0"

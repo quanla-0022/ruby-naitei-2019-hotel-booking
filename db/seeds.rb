@@ -9,16 +9,13 @@ User.create!(name: "Quan",
              email: "le.anh.quan@sun-asterisk.com",
              password: "123456",
              password_confirmation: "123456",
-             activated: true,
-             role: 1,
-             activated_at: Time.zone.now)
+             role: 1).skip_confirmation!
+
 User.create!(name: "Quan la",
             email: "quantl12113@gmail.com",
             password: "123456",
             password_confirmation: "123456",
-            role: 2,
-            activated: true,
-            activated_at: Time.zone.now)
+            role: 2).skip_confirmation!
 20.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@gmail.com"
@@ -26,7 +23,5 @@ User.create!(name: "Quan la",
   User.create!(name: name,
                email: email,
                password: password,
-               password_confirmation: password,
-               activated: true,
-               activated_at: Time.zone.now)
+               password_confirmation: password).skip_confirmation!
 end
